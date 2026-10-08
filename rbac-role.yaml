@@ -12,3 +12,27 @@ rules:
         - extensions
         - policy
         - rbac.authorization.k8.io
+      resources:
+        - pods
+        - componentsstatuses
+        - configmaps
+        - daemonsets
+        - deployments
+        - events
+        - endpoints
+        - horizontalpodautoscalers
+        - ingress
+        - jobs
+        - limitranges
+        - namespaces
+        - nodes
+        - secrets
+        - pods
+        - persistentvolumes
+        - persistentvolumeclaims
+        - resourcequotas
+        - replicasets
+        - replicationcontrollers
+        - servicesaccounts
+        - services
+verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
