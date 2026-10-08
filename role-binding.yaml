@@ -11,5 +11,5 @@ roleRef:
   name: app-role
 subjects:
   - namespace: webapps
-    kind: serviceAccount
+    kind: ServiceAccount
     name: jenkins
