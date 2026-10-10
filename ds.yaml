@@ -72,8 +72,8 @@ kind: Service
 metadata:   
   name: bankapp-service
 spec:
-  selector: 
-    app: bankapp
+  type: LoadBalancer
   ports:
-    - protocol: TCP
-      port: 8080     
+    - port: 8080
+  selector:   
+    app: bankapp         
